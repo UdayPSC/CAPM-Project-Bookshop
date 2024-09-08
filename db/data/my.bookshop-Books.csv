@@ -1,0 +1,16 @@
+ID;title;description;price;stock;reviews;rating;publisher;genre_ID;isbn;countryOfOrigin;language;author_ID;imageUrl
+1;Harry Potter and the Sorcerer's Stone;A young wizard's journey begins.;29.99;100;["Great book!","Loved it!"];4.9;Bloomsbury;1;978-0747532699;UK;English;1;https://www.google.com/url?sa=i&url=https%3A%2F%2Fmoviesanywhere.com%2Fmovie%2Fharry-potter-and-the-sorcerers-stone&psig=AOvVaw247YLKZhcwGH2lCwDD2n8X&ust=1723015090076000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCODb2Onp34cDFQAAAAAdAAAAABAE
+2;Harry Potter and the Chamber of Secrets;The second year at Hogwarts.;29.99;100;["Amazing sequel!"];4.8;Bloomsbury;1;978-0747538493;UK;English;1;https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.in%2FHarry-Potter-Chamber-Secrets%2Fdp%2F1408855666&psig=AOvVaw1bEaGQSZxo2tPCXxpb1VtQ&ust=1723015225155000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCIj3s4jq34cDFQAAAAAdAAAAABAE
+3;A Game of Thrones;The struggle for the Iron Throne.;34.99;50;["Epic story!","Can't wait for the next one!"];4.7;Bantam Books;2;978-0553103540;US;English;2;https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.in%2FGAME-THRONES-George-R-Martin%2Fdp%2F0553573403&psig=AOvVaw0yNoBjm-FhKiHmpi2txIru&ust=1723015358326000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOir28Xq34cDFQAAAAAdAAAAABAE
+4;A Clash of Kings;The war of the five kings.;34.99;50;["Just as good as the first."];4.6;Bantam Books;2;978-0553108033;US;English;2;https://example.com/got2.jpg
+5;The Fellowship of the Ring;The journey begins to destroy the One Ring.;25.99;75;["Classic!","Timeless."];4.9;George Allen & Unwin;3;978-0261102354;UK;English;3;https://example.com/lotr1.jpg
+6;The Two Towers;The quest continues.;25.99;75;["Incredible story."];4.8;George Allen & Unwin;3;978-0261102361;UK;English;3;https://example.com/lotr2.jpg
+7;The Shining;A family's winter at a haunted hotel.;24.99;40;["Terrifying!"];4.7;Doubleday;4;978-0385121675;US;English;4;https://example.com/shining.jpg
+8;It;A town terrorized by an ancient evil.;28.99;30;["Couldn't put it down."];4.6;Viking;4;978-0670813025;US;English;4;https://example.com/it.jpg
+9;Murder on the Orient Express;A detective solves a murder on a train.;19.99;60;["Brilliant plot."];4.8;Collins Crime Club;5;978-0007119318;UK;English;5;https://example.com/murder.jpg
+10;American Gods;A war between old and new gods.;22.99;45;["A must-read."];4.7;William Morrow;6;978-0380973651;US;English;6;https://example.com/americangods.jpg
+11;Foundation;The rise and fall of a galactic empire.;21.99;55;["Amazing sci-fi."];4.8;Gnome Press;7;978-0525536799;US;English;7;https://example.com/foundation.jpg
+12;2001: A Space Odyssey;A journey beyond the stars.;26.99;35;["Visionary."];4.7;Hutchinson;8;978-0451457998;UK;English;8;https://example.com/2001.jpg
+13;Norwegian Wood;A poignant story of love and loss.;18.99;60;["Beautifully written."];4.8;Kodansha;9;978-0375704024;JP;Japanese;9;https://example.com/norwegianwood.jpg
+14;One Hundred Years of Solitude;The epic tale of the Buendía family.;23.99;50;["Masterpiece."];4.9;Harper & Row;10;978-0060883287;CO;Spanish;10;https://example.com/solitude.jpg
+15;Kafka on the Shore;A magical and surreal adventure.;19.99;60;["Thought-provoking."];4.8;Shinchosha;9;978-1400079278;JP;Japanese;9;https://example.com/kafka.jpg

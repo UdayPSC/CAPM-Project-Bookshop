@@ -1,0 +1,60 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
+    <Dialog id="createBookDialog" title="Create New Book" stretch="false" contentWidth="500px" contentHeight="auto">
+        <f:SimpleForm
+            id="_IDGenSimpleForm1" editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" 
+            adjustLabelSpan="false" emptySpanXL="0"
+            emptySpanL="0" emptySpanM="0" emptySpanS="0"
+            columnsXL="1" columnsL="1" columnsM="1">
+            <f:content>
+                <Label id="_IDGenLabel1" text="Title"/>
+                <Input id="titleInput" placeholder="Enter book title" required="true" tooltip="Title of the book"/>
+
+                <Label id="_IDGenLabel2" text="Description"/>
+                <Input id="descriptionInput" placeholder="Enter book description" required="true" tooltip="Brief description of the book"/>
+
+                <Label id="_IDGenLabel3" text="Price"/>
+                <Input id="priceInput" type="Number" placeholder="Enter price" required="true" tooltip="Price of the book"/>
+
+                <Label id="_IDGenLabel4" text="Stock"/>
+                <Input id="stockInput" type="Number" placeholder="Enter stock quantity" required="true" tooltip="Number of copies available"/>
+
+                <Label id="_IDGenLabel5" text="Reviews (semicolon separated)"/>
+                <Input id="reviewsInput" placeholder="Enter reviews separated by semicolons" tooltip="Enter multiple reviews separated by semicolons"/>
+
+                <Label id="_IDGenLabel6" text="Rating"/>
+                <Input id="ratingInput" type="Number" placeholder="1-5" required="true" tooltip="Rating between 1 and 5" liveChange=".onRatingLiveChange"/>
+
+                <Label id="_IDGenLabel7" text="Publisher"/>
+                <Input id="publisherInput" placeholder="Enter publisher name" required="true" tooltip="Publisher of the book"/>
+
+                <Label id="_IDGenLabel8" text="Genre"/>
+                <Select id="genreSelect" items="{/Genres}" required="true" tooltip="Select a genre">
+                    <core:Item id="_IDGenItem1" key="{ID}" text="{genreName}" />
+                </Select>
+
+                <Label id="_IDGenLabel9" text="ISBN"/>
+                <Input id="isbnInput" placeholder="Enter ISBN" required="true" tooltip="International Standard Book Number"/>
+
+                <Label id="_IDGenLabel10" text="Country of Origin"/>
+                <Input id="countryInput" placeholder="Enter country of origin" required="true" tooltip="Country where the book was published"/>
+
+                <Label id="_IDGenLabel11" text="Language"/>
+                <Input id="languageInput" placeholder="Enter language" required="true" tooltip="Language in which the book is written"/>
+
+                <Label id="_IDGenLabel12" text="Author"/>
+                <Select id="authorSelect" items="{/Authors}" required="true" tooltip="Select a Author">
+                    <core:Item id="_IDGenItem2" key="{ID}" text="{name}" />
+                </Select>
+
+                <Label id="_IDGenLabel13" text="Image URL"/>
+                <Input id="imageUrlInput" placeholder="Enter image URL" tooltip="URL for the book cover image"/>
+            </f:content>
+        </f:SimpleForm>
+        <beginButton>
+            <Button id="Button1" text="Create" press=".onConfirmCreate" type="Emphasized"/>
+        </beginButton>
+        <endButton>
+            <Button id="Button2" text="Cancel" press=".onCancelCreate"/>
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

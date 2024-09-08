@@ -1,0 +1,92 @@
+<mvc:View
+    controllerName="mybookshopapp.controller.Orders"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Page
+        id="ordersPage"
+        title="Orders"
+        showNavButton="true"
+        navButtonPress=".onNavBack"
+    >
+        <content>
+            <Table
+                id="ordersTable"
+                items="{
+                path: '/Orders',
+                parameters: {
+                    expand: 'OrderItems,OrderItems/book'
+                }
+            }"
+            >
+                <columns>
+                    <Column id="_IDGenColumn1">
+                        <Text
+                            id="_IDGenText1"
+                            text="Order ID"
+                        />
+                    </Column>
+                    <Column id="_IDGenColumn2">
+                        <Text
+                            id="_IDGenText2"
+                            text="Order Date"
+                        />
+                    </Column>
+                    <Column id="_IDGenColumn4">
+                        <Text
+                            id="_IDGenText4"
+                            text="Total Amount"
+                        />
+                    </Column>
+                    <Column id="_IDGenColumn5">
+                        <Text
+                            id="_IDGenText5"
+                            text="Status"
+                        />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem id="_IDGenColumnListItem1">
+                        <cells>
+                            <Text
+                                id="_IDGenText6"
+                                text="{ID}"
+                            />
+                            <Text
+                                id="_IDGenText7"
+                                text="{
+                                path: 'orderDate',
+                                formatter: '.formatDate'
+                            }"
+                            />
+                            <Text
+                                id="_IDGenText8"
+                                text="{
+                                path: 'totalAmount',
+                                formatter: '.formatCurrency'
+                            }"
+                            />
+                            <HBox id="_IDGenHBox1">
+                                <Button
+                                    id="_IDGenButton1"
+                                    text="{status}"
+                                    type="{= ${status} === 'Pending' ? sap.m.ButtonType.Warning :
+                                          ${status} === 'Dispatched' ? sap.m.ButtonType.Emphasized :
+                                          ${status} === 'Delivered' ? sap.m.ButtonType.Success :
+                                          ${status} === 'Rejected' ? sap.m.ButtonType.Negative : sap.m.ButtonType.Default}"
+                                    enabled="{
+                                        path: 'status',
+                                        formatter: '.isStatusChangeable',
+                                        targetType: 'any'
+                                    }"
+                                    press="onChangeStatus"
+                                />
+                            </HBox>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

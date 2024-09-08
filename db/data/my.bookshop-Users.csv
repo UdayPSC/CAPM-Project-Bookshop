@@ -1,0 +1,3 @@
+username,password,email,firstName,lastName,admin
+admin,Admin@123,local.admin@email.com,Local,Admin,true
+user,User@123,local.user@email.com,Local,User,false

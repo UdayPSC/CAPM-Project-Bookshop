@@ -1,0 +1,16 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+     <Label id="emailLabel" text="Email " required="true" visible="{dialogModel>/isRegistering}" />
+     <Input id="emailInput" 
+           placeholder="Enter email" 
+           required="true" 
+           visible="{dialogModel>/isRegistering}"
+           liveChange=".onEmailLiveChange"
+           valueState="{dialogModel>/emailState}"
+           valueStateText="{dialogModel>/emailStateText}" />
+    
+    <Label id="firstNameLabel" text="First Name " required="true" visible="{dialogModel>/isRegistering}" />
+    <Input id="firstNameInput" placeholder="Enter first name" required="true" visible="{dialogModel>/isRegistering}" />
+    
+    <Label id="lastNameLabel" text="Last Name " required="true" visible="{dialogModel>/isRegistering}" />
+    <Input id="lastNameInput" placeholder="Enter last name" required="true" visible="{dialogModel>/isRegistering}" />
+</core:FragmentDefinition>
